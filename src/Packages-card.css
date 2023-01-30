@@ -1,0 +1,59 @@
+.packages-card{
+    width: 23vw;
+    background-color: burlywood;
+    height: 500px;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+    transform: scale(0.8);
+    box-shadow: 0 0 8px gray;
+}
+.packages-card:hover{
+    transform: scale(1);
+}
+
+.packages-card img{
+    width: 100%;
+}
+
+.packages-card h3{
+    margin: 10px 10px;
+}
+.packages-card h4{
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+.packages-card p{
+    margin: 0 10px;
+}
+
+.packages-card .pricing{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.packages-card .pricing button{
+    margin-right: 10px;
+    width: 150px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: coral;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+@media (max-width:600px) {
+    .packages-card{
+        width: 90vw;
+        background-color: burlywood;
+        height: 500px;
+        padding: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.5s;
+        transform: scale(0.8);
+        box-shadow: 0 0 8px gray;
+    }
+}

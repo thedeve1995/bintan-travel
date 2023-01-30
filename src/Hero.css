@@ -1,0 +1,180 @@
+.hero {
+    width: 100%;
+    height: 92vh;
+    background-image: url(/public/head.webp);
+    background-size: cover;
+    position: relative;
+}
+
+.hero-sec{
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-sec .writing {
+    background-color: rgba(0, 0, 0, 0.11);
+    padding: 100px;
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    border:1px solid white;
+    box-shadow: 0 0 10px black;
+}
+
+
+.hero-sec .writing h1 {
+    text-align: center;
+    font-size: 75px;
+    color: white;
+    
+}
+.hero-sec .writing h2 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.hero-sec .writing h2 span{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+}
+.hero-sec .writing p {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+.hero-sec .writing button, .writing button {
+    width: 500px;
+    height: 60px;
+    margin-left: 50%;
+    margin-top: 2%;
+    transform: translate(-50%,0);
+    background-color: rgba(0, 68, 255, 0.678);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+
+.hero-sec .writing button:hover{
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+
+.hero-sec .writing button:active{
+    box-shadow: none;
+}
+.hero-sec .writing button a:active{
+    box-shadow: none;
+}
+
+.hero-sec .writing button a,.writing button a {
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+}
+#gambar{
+    display: none;
+}
+
+@media (max-width:600px){
+    .hero {
+        width: 100%;
+        height: 92vh;
+        background-image: url(/public/head.jpg);
+        background-size: cover;
+        position: relative;
+    }
+    
+    .hero-sec{
+        width: 100%;
+        height: 92vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .hero-sec .writing {
+        width: 90vw;
+        background-color: rgba(0, 0, 0, 0.37);
+        height: 50vh;
+        padding: 10px;
+        padding-top: 80px;
+        backdrop-filter: blur(2px);
+        border-radius: 20px;
+        border:1px solid white;
+        box-shadow: 0 0 10px black;
+    }
+    
+    
+    .hero-sec .writing h1 {
+        text-align: center;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        
+    }
+    .hero-sec .writing h2 {
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        margin-bottom: 10px;
+    }
+    .hero-sec .writing h2 span{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-family: 'Pacifico', cursive;
+    }
+    .hero-sec .writing p {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        text-shadow: 0 0 2px black;
+        margin-bottom: 10px;
+    }
+    
+    .hero-sec .writing button, .writing button {
+        width: 95%;
+        height: 35px;
+        margin-left: 50%;
+        margin-top: 2%;
+        transform: translate(-50%,0);
+        background-color: rgba(0, 68, 255, 0.678);
+        outline: none;
+        border: none;
+        border-radius: 30px;
+        border: 1px solid white;
+    }
+    
+    .hero-sec .writing button:hover{
+        box-shadow: 0px 0px 5px black;
+        cursor: pointer;
+    }
+    
+    .hero-sec .writing button:active{
+        box-shadow: none;
+    }
+    .hero-sec .writing button a:active{
+        box-shadow: none;
+    }
+    
+    .hero-sec .writing button a,.writing button a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+    }
+
+    #gambar {
+        display: block;
+        width: 80vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.container2 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/public/sand.jpeg);
+    background-size: cover;
+}
+
+.testimonial {
+    width: 70%;
+}
+
+.testimonial-text {
+    text-align: center;
+    background-image: linear-gradient(45deg, rgb(0, 119, 255), rgb(233, 207, 62));
+    color: white;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.5);
+    border-radius: 20px;   
+}
+
+.user-text {
+    width: 50%;
+    text-align: center;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+.user-text p{
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+}
+
+.user-text span {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    animation-delay: 0.5s;
+}
+
+.user-text span a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.textimonial-pic {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.user-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+    padding: 5px;
+    cursor: pointer;
+    
+    
+}
+
+.user-text.active-text {
+    display: block;
+    animation: moveup 1s linear forwards;
+}
+
+.user-pic.active-pic {
+    border: 3px solid crimson;
+    width: 50px;
+    height: 50px; 
+}
+
+@keyframes moveup {
+    0% {
+        margin-top: 25px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+    
+}
+
+@media (max-width:600px) {
+    
+
+.container2 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/public/sand.jpeg);
+    background-size: cover;
+}
+
+.testimonial {
+    width: 90%;
+}
+
+.testimonial-text {
+    text-align: center;
+    background-image: linear-gradient(45deg, rgb(0, 119, 255), rgb(233, 207, 62));
+    color: white;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.5);
+    border-radius: 20px;   
+}
+
+.user-text {
+    width: 90%;
+    text-align: center;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+.user-text p{
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+}
+
+.user-text span {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    animation-delay: 0.5s;
+}
+
+.user-text span a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.textimonial-pic {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+}
