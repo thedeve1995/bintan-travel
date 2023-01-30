@@ -9,15 +9,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(/public/head.webp);
+  
+    
 }
 
 .login__logo {
     margin-top: 20px;
     margin-bottom: 20px;
     object-fit: contain;
-    width: 100px;
+    width: 300px;
     margin-right: auto;
     margin-left: auto;
+    border-radius: 30px;
   }
 
 .login__container {
@@ -28,15 +32,21 @@
     border-radius: 5px;
     border: 1px solid lightgray;
     padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(252, 252, 252, 0.493);
+    backdrop-filter: blur(4px);
 }
 
 .login__container > h1 {
     font-weight: 500;
     margin-bottom: 20px;
+    color: white;
+    text-align: center;
   }
 
 .login__container > form > h5 {
     margin-bottom: 5px;
+    color: white;
 }
 
 .login__container > form > input {
@@ -59,10 +69,12 @@
   min-height: 50px;
   font-size: 20px;
   cursor: pointer;
-  background-image: linear-gradient(white,yellow);
+  background-image: linear-gradient(rgb(133, 196, 255),rgb(0, 110, 255));
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
   border: 1px solid lightgray;
+  color: white;
+  
   }
 
   .login__registerButton {

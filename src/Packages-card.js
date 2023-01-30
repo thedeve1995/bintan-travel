@@ -1,15 +1,21 @@
 import './Packages-card.css';
 import { useStateValue } from './StateProvider'
 
-function PackagesCard(props){
+function PackagesCard({ src, trip, rating, subtrip, type, price, location, pax }){
     const [{ basket }, dispatch] = useStateValue();
     
     const addToBasket = () => {
         dispatch({
             type: 'ADD_TO_BASKET',
             item: {
-                
-                
+                src: src,
+                trip: trip,
+                subtrip: subtrip,
+                rating: rating,
+                type: type,
+                price: price,
+                location: location,
+                pax: pax    
             },
         });
     };
@@ -17,25 +23,25 @@ function PackagesCard(props){
     return (
         <div className='packages-card'>
             <img  
-                src={props.src}
+                src={src}
             />
   
             <h3>
-                {props.trip}
+                {trip}
             </h3>
             <h4>
-                {props.subtrip}
+                {subtrip}
             </h4>
 
-            <p>{props.type}</p>
-            <p>{props.rating}</p>
-            <p>{props.location}</p>
-            <p>{props.pax}</p>
+            <p>{type}</p>
+            <p>{rating}</p>
+            <p>{location}</p>
+            <p>{pax}</p>
 
             <div className='pricing'>
                 <div className='amount'>
                     <p>Price :</p>
-                    <h4 className='price'>{props.price}</h4>
+                    <h4 className='price'>SGD{price}/pax</h4>
                 </div>
                 <button onClick={addToBasket}>
                     Cart

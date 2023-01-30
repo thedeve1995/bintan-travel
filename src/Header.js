@@ -59,11 +59,12 @@ function Header() {
                 <p>{user ? 'Sign Out' : 'Sign In'}</p>
               </div>
             </Link>
-
+            <Link to="/checkout">
             <span className='cart'>
               <i class="fa-solid fa-cart-flatbed-suitcase"></i>
               <sup>{basket?.length}</sup>
             </span>
+            </Link>
           </div>
         </div>
     </div>
